@@ -77,6 +77,12 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 %\usepackage{multirow}
 
+%\usepackage{makecell} %line break inside table. Alternatively, for a single cell, you can use the \makecell or
+%\renewcommand\theadalign{bc}  %\thead commands with the optional argument [vh], v is t,c, or b. h is l,c,or r
+%\renewcommand\theadfont{\bfseries}
+%\renewcommand\theadgape{\Gape[4pt]}
+%\renewcommand\cellgape{\Gape[4pt]}
+
 \usepackage{paralist} %Inline list(inparaenum), always on top of enumitem
 %\usepackage{longtable} % Enable table cross multiple page
 %\usepackage{array} %Mostly formatting columns and spacing
