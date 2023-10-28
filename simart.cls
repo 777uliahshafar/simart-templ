@@ -162,6 +162,7 @@
     \lstset{style=fixprintcode}
 %----------------------------------------------------------------------------------------
 % CONFIGURATION OF TIKZ
+% often show undefined control sequence when put over some code
 %\usepackage{tikz}
 %\usetikzlibrary{shapes.geometric, arrows}
 %
