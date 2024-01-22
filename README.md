@@ -44,3 +44,8 @@ Sometimes, subfiles will not read the main files in the project directory which 
 ## Can't find font
 
 Ensure each paragraph or config have no additional unprovided font.
+
+## Japanese typesetting
+The most recent method is using `jlreq` document class.
+
+
