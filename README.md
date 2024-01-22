@@ -2,6 +2,9 @@
 
 This template was created using article class in 10/11/2020. The purpose of this template is to create fabolous article. With the help of helpers4ht, the configuration of this template can turn the compilation to HTML. In case we need to create word file, we can easily copy text from html file or open html file with Microsoft word.
 
+## Attention!!
+Before using latex for document typesetting, ask yourself can Microsoft word accomplish your task much easier? if yes then you had better not use latex. Beside that, writing in neovim is still good for raw text. Happy writing.
+
 ## Change compiler engine
 
 % Add this line below to the first fifth line in begginning main file. Specify the compiler engine.
