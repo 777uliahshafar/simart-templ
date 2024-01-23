@@ -23,6 +23,8 @@
 *.out
 *.synctex.gz
 *.synctex.gz.sum.synctex
+/subfiles/*.synctex.gz.sum.sycntex
+/subfiles/*.synctex.gz
 .DS_Store
 *.fls
 *.fdb_latexmk
@@ -36,4 +38,3 @@
 *.tmp
 *.xref
 *.lg
-
