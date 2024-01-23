@@ -13,21 +13,16 @@ Before using latex for document typesetting, ask yourself can Microsoft word acc
 or
 `%! TeX program = lualatex` for LuaLatex(recommended)
 
-### Create texmf directory for custom package
+### texmf directory for custom package
 
-Install Helpers4ht
+texmf directory was placed in `~/.config/mytexmf`
 
-`mkdir -p $(kpsewhich -var-value TEXMFHOME)/tex/latex`
-
-This will create directory ~/Library/texmf/tex/latex.
-
-### Lualatex to HTML package support
-
-This template has already been configured with helpers4ht in mycfg file. Some style of text required package which can be activated in preamble main.tex. Just clone this rep in texmf/tex/latex folder.
-
-`git clone https://github.com/777uliahshafar/helpers4ht.git`
+this folder contents helpers4ht and datetime packages. The helpers4ht is used for converting tex to html.
 
 ### Compile HTML
+
+- Command in terminal not in nvim command line.
+- It's recommended to convert it in simart-template or simple template to easily copying the text without format.
 
 `make4ht -ul filename "configfilename"`
 
