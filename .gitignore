@@ -28,3 +28,11 @@
 *.swp
 *.swo
 /Spss/*
+*.4ct
+*.4tc
+*.css
+*.idv
+*.tmp
+*.xref
+
+
