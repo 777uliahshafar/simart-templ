@@ -37,6 +37,7 @@
 \setmainlanguage[variant=indonesian]{malay}
 \setotherlanguages{english}
 \PolyglossiaSetup{malay}{indentfirst=true}
+%\setmainfont{Times New Roman} 
 
 % Rename caption's command for bahasai
 \addto\captionsmalay{
