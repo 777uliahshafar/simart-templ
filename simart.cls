@@ -206,6 +206,7 @@
 % 	BoldItalicFont=NewCM10-BoldItalic.otf,%
 % 	SmallCapsFeatures={Numbers=OldStyle}]{NewCM10-Book.otf}
 % font can be downloaded : https://ctan.org/tex-archive/fonts/newcomputermodern/otf
+% other good font used in dark mode pdf is poppins Poppins-Regular.ttf
 
 % PdfLATEX FONT
 %\usepackage[utf8]{inputenc} % Required for inputting international characters
