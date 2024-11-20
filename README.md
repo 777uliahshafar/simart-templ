@@ -24,7 +24,7 @@ this folder contents helpers4ht and datetime packages. The helpers4ht is used fo
 - Command in terminal not in nvim command line.
 - It's recommended to convert it in simart-template or simple template to easily copying the text without format.
 
-`make4ht -ul filename "configfilename"`
+`make4ht -ul filename.tex "confignameonly"`
 
 -u = compile with encoing utf-8
 -l = cimpile with lualatex engine
