@@ -41,13 +41,13 @@
 
 % Rename caption's command for bahasai
 \addto\captionsmalay{
-    \renewcommand{\abstractname}{Ringkasan}
+	\renewcommand{\abstractname}{Ringkasan}
 }
 % Rename caption's command for english
 \addto\captionsenglish{
-    \renewcommand{\figurename}{Gambar}
-    \renewcommand{\tablename}{Tabel}
-    \renewcommand{\abstractname}{ABSTRACT}
+	\renewcommand{\figurename}{Gambar}
+	\renewcommand{\tablename}{Tabel}
+	\renewcommand{\abstractname}{ABSTRACT}
 }
 
 % Syntax will be active after first compile
@@ -97,10 +97,6 @@
 
 % cellcolor
 % \usepackage[table, svgnames]{xcolor}
-
-% bullet at table start
-\newcommand{\tabitem}{~\llap{\textbullet}} % fake bullet itemize in table cell
-\newcommand{\tabitems}{~~\llap{\textbullet}~~}
 
 % spacing start
 \setlist{noitemsep} % No spacing between list items
@@ -163,19 +159,19 @@
 % PRINT CODE IN LATEX DOCUMENT
 \usepackage{listings}
 \lstdefinestyle{fixprintcode}{
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    keepspaces=true,
-    numbers=none,
-    showspaces=false,
-    showstringspaces=false,
-    showtabs=false,
-    tabsize=2,
-    frame=trBL}
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=none,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+	frame=trBL}
 
-    \lstset{style=fixprintcode}
+\lstset{style=fixprintcode}
 %----------------------------------------------------------------------------------------
 % CONFIGURATION OF TIKZ
 % often show undefined control sequence when put over some code
@@ -259,8 +255,8 @@
 []%after-title
 
 \titlespacing\section{0pt}%left
-{11pt plus 4pt minus 2pt}%before
-{11pt plus 2pt minus 2pt}%after
+ {11pt plus 4pt minus 2pt}%before
+ {11pt plus 2pt minus 2pt}%after
 
 \titlespacing\subsection{0pt}{22pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
@@ -271,15 +267,15 @@
 
 	\begin{center} % align
 		\begin{singlespace}
-		\@title % Increase the font size of the title
-		\@date % Date
+			\@title % Increase the font size of the title
+			\@date % Date
 		\end{singlespace}
 		\vspace{11pt}
-	\begin{onehalfspacing}
-		\@author\\ % Author name
-	\end{onehalfspacing}
-	\vspace{11pt}
-		\end{center}
+		\begin{onehalfspacing}
+			\@author\\ % Author name
+		\end{onehalfspacing}
+		\vspace{11pt}
+	\end{center}
 }
 \makeatother
 
@@ -326,3 +322,15 @@
 
 %\usepackage{mystyles} %Change fonts color,size with command \myhighlight
 %\usepackage{myspacing} %Change linespacing via environment e.g onehalf.
+
+%----------------------------------------------------------------------------------------
+%       OTHERS
+%----------------------------------------------------------------------------------------
+
+% Create checkmark symbol
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+
+% bullet at table start
+\newcommand{\tabitem}{~\llap{\textbullet}} % fake bullet itemize in table cell
+\newcommand{\tabitems}{~~\llap{\textbullet}~~}
+
