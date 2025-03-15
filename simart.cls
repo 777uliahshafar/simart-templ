@@ -37,7 +37,7 @@
 \setmainlanguage[variant=indonesian]{malay}
 \setotherlanguages{english}
 \PolyglossiaSetup{malay}{indentfirst=true}
-%\setmainfont{Times New Roman} 
+%\setmainfont{Times New Roman}
 
 % Rename caption's command for bahasai
 \addto\captionsmalay{
@@ -83,12 +83,26 @@
 %\renewcommand\theadfont{\bfseries}
 %\renewcommand\theadgape{\Gape[4pt]}
 %\renewcommand\cellgape{\Gape[4pt]}
+% end makecell config
 
 \usepackage{paralist} %Inline list(inparaenum), always on top of enumitem
 %\usepackage{longtable} % Enable table cross multiple page
 %\usepackage{array} %Mostly formatting columns and spacing
 \usepackage{enumitem} % Required for list customisation
 
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}} %centering elemen in table
+\newcommand{\HY}{\hyphenpenalty=25\exhyphenpenalty=25}
+\newcolumntype{Z}{>{\HY\RaggedRight\arraybackslash\hspace{0pt}}X}
+
+% cellcolor
+% \usepackage[table, svgnames]{xcolor}
+
+% bullet at table start
+\newcommand{\tabitem}{~\llap{\textbullet}} % fake bullet itemize in table cell
+\newcommand{\tabitems}{~~\llap{\textbullet}~~}
+
+% spacing start
 \setlist{noitemsep} % No spacing between list items
 \setlist[itemize]{label=\textbullet, nosep, topsep=0pt, partopsep=0pt, parsep=0pt} % No spacing between itemize
 
@@ -110,6 +124,7 @@
 %    p{#1}%
 %    <{\@finalstrut\@arstrutbox\enditemize\endminipage}}
 %\makeatother
+
 
 %----------------------------------------------------------------------------------------
 % PREAMBLE OF BIBLIOGRAPHY
