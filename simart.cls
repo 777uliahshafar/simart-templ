@@ -263,6 +263,8 @@
 % \setlength{\cftfigindent}{0pt}%remove indentation
 % \setlength{\cfttabindent}{0pt}%remove indentation
 
+% \usepackage{tocbibind} %add toc inside toc
+
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
