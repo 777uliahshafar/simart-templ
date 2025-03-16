@@ -53,6 +53,10 @@
 % Syntax will be active after first compile
 %\usepackage{comment}
 
+% color the table's cell \cellcolor{}
+\usepackage[table, svgnames]{xcolor}
+% add pdf files
+\usepackage{pdfpages} %loaded after xcolor
 %----------------------------------------------------------------------------------------
 % PREAMBLE OF FIGURES
 
@@ -94,9 +98,6 @@
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}} %centering elemen in table
 \newcommand{\HY}{\hyphenpenalty=25\exhyphenpenalty=25}
 \newcolumntype{Z}{>{\HY\RaggedRight\arraybackslash\hspace{0pt}}X}
-
-% cellcolor
-% \usepackage[table, svgnames]{xcolor}
 
 % spacing start
 \setlist{noitemsep} % No spacing between list items
@@ -226,6 +227,41 @@
 %\usepackage[protrusion=true, expansion=true]{microtype} % Better typography
 
 %\linespread{1.05} % Increase line spacing slightly; Palatino benefits from a slight increase by default
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+\usepackage[titles]{tocloft}
+\setlength{\cftbeforesecskip}{5pt}
+% toc without chapter
+% if toc with chapter, switch to chap  from sec
+\renewcommand{\cftsecfont}{\normalfont}%change chap to normal
+\renewcommand{\cftsecpagefont}{\normalfont}%change num page to normal
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}%add dots and change dots to normal
+\renewcommand\cftsecpresnum{BAB }
+
+\renewcommand{\cftfigpresnum}{\figurename\enspace}
+\renewcommand{\cftfigaftersnum}{\enspace}
+\newlength{\mylenf}
+\settowidth{\mylenf}{\cftfigpresnum\cftfigaftersnum}
+\addtolength{\cftfignumwidth}{\mylenf}
+
+%\cftsetindents{figure}{0em}{3.5em}
+
+% \renewcommand{\cfttabpresnum}{\tablename\enspace}
+% \newlength{\mylent}
+% \settowidth{\mylent}{\cfttabpresnum\cfttabaftersnum}
+% \addtolength{\cfttabnumwidth}{\mylent}
+
+\newlength{\mylenc}
+\settowidth\mylenc{BAB 1\ }
+\cftsetindents{sec}{0pt}{\mylenc}
+
+% \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+% \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+%
+% \setlength{\cftfigindent}{0pt}%remove indentation
+% \setlength{\cfttabindent}{0pt}%remove indentation
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
