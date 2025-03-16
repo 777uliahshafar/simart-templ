@@ -47,6 +47,7 @@ Lorem Ipsum Lorem Ipsum Lorem Ipsum} \\
 %----------------------------------------------------------------------------------------
 
 
+% \AddToHook{cmd/section/before}{\clearpage} %start each section in new page
 
 \begin{document}
 \thispagestyle{empty}
@@ -102,6 +103,8 @@ Lorem Ipsum Lorem Ipsum Lorem Ipsum} \\
 %----------------------------------------------------------------------------------------
 %	ESSAY BODY
 %----------------------------------------------------------------------------------------
+\includepdf[pages={1-2},pagecommand={\thispagestyle{plain}\fakesection{}}]{file.pdf}
+
 \section{Pendahuluan}
 
 This file powered by \citep{einstein} and \citep{latexcompanion}. It can also be found in \cite{knuthwebsite}.
