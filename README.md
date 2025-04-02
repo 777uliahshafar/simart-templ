@@ -3,6 +3,7 @@
 This template was created using article class in 10/11/2020. The purpose of this template is to create fabolous article. With the help of helpers4ht, the configuration of this template can turn the compilation to HTML. In case we need to create word file, we can easily copy text from html file or open html file with Microsoft word.
 
 ## Attention!!
+
 Before using latex for document typesetting, ask yourself can Microsoft word accomplish your task much easier? if yes then you had better not use latex. Beside that, writing in neovim is still good for raw text. Happy writing.
 
 ## Change compiler engine
@@ -24,10 +25,16 @@ this folder contents helpers4ht and datetime packages. The helpers4ht is used fo
 - Command in terminal not in nvim command line.
 - It's recommended to convert it in simart-template or simple template to easily copying the text without format.
 
-`make4ht -ul filename.tex "confignameonly"`
+`make4ht -ul filename "mycfg.cfg"`
 
 -u = compile with encoing utf-8
 -l = cimpile with lualatex engine
+
+### Convert from html to docx
+
+Kadang, html file menghilangkan _hyperlink_ pada sitasi. Maka, convert ke file docx penting.
+
+`pandoc test1.html -f html -t docx -s -o test1.docx`
 
 ## Datetime2 for bahasai
 
@@ -44,6 +51,5 @@ Sometimes, subfiles will not read the main files in the project directory which 
 Ensure each paragraph or config have no additional unprovided font.
 
 ## Japanese typesetting
+
 The most recent method is using `jlreq` document class.
-
-
