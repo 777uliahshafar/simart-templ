@@ -36,6 +36,11 @@ Kadang, html file menghilangkan _hyperlink_ pada sitasi. Maka, convert ke file d
 
 `pandoc test1.html -f html -t docx -s -o test1.docx`
 
+### Convert from docx to tex
+
+- Install `https://github.com/transpect/docx2tex`
+- Require `jre-8u461-windows-x64` and `jdk-24_windows-x64_bin`.
+
 ## Datetime2 for bahasai
 
 The default datetime2 doesn't support DTMtoday Indonesian date format. In order to achive it, create/copy custom datetime2-bahasai.ldf package in texmf from dotfiles.
